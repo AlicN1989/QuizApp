@@ -1,0 +1,93 @@
+/* ---------- Quiz Play Card Styling ---------- */
+.quiz-card.play-mode {
+  margin: 30px auto;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 20px;
+  background: #fff;
+  border: 2px solid #4a90e2;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Typography & Layout */
+.quiz-progress {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  color: #444;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.quiz-question {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.quiz-button {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  padding: 12px 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.quiz-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Completed Quiz View */
+.quiz-header {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  color: #4a90e2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.quiz-score {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.quiz-passed,
+.quiz-failed {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.quiz-passed {
+  color: #2ecc71;
+}
+
+.quiz-failed {
+  color: #e74c3c;
+}

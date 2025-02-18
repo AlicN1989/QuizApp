@@ -1,0 +1,38 @@
+.custom-dialog {
+  max-width: 500px;
+  margin: auto;
+  background-color: #f5f5f5;
+}
+
+.custom-dialog-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.custom-dialog-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.custom-dialog-content-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.custom-dialog-actions {
+  justify-content: center;
+  gap: 20px;
+}
+
+.custom-cancel-button {
+  color: #f50057;
+  border-color: #f50057;
+}
+
+.custom-yes-button {
+  background: linear-gradient(45deg, #2196f3, #21cbf3);
+  color: #fff;
+}

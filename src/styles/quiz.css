@@ -1,0 +1,160 @@
+/* ---------------- Global App Styles ---------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: #f0f2f5;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.app-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* ---------------- Card Styling (Quiz, Creator, Edit) ---------------- */
+.quiz-card,
+.quiz-creator,
+.edit-quiz-card {
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.quiz-card:hover,
+.quiz-creator:hover,
+.edit-quiz-card:hover {
+  transform: scale(1.02);
+}
+
+/* ---------------- Typography ---------------- */
+.quiz-header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  color: #3f51b5;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.quiz-progress,
+.quiz-question,
+.quiz-score {
+  font-family: "Roboto", sans-serif;
+  color: #555;
+  text-align: center;
+}
+
+.quiz-question {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.quiz-score {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.quiz-passed {
+  color: #2ecc71;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.quiz-failed {
+  color: #e74c3c;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* ---------------- Buttons ---------------- */
+.quiz-button {
+  width: 100%;
+  font-size: 1rem;
+  text-transform: none;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 10px;
+  background: linear-gradient(45deg, #2196f3, #21cbf3);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.quiz-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.quiz-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.editing-quiz {
+  border: 2px solid #3f51b5;
+  background-color: #e3f2fd;
+}
+
+/* ---------------- Quiz Setup Buttons ---------------- */
+.quiz-setup button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.quiz-setup button:hover {
+  background: #1e88e5;
+}
+
+.question-form {
+  margin-top: 20px;
+}
+
+.question-edit {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+/* ---------------- Material UI Overrides ---------------- */
+.MuiTextField-root {
+  margin-top: 10px;
+}
+
+.remove-quiz-button {
+  background: #e74c3c !important;
+}
